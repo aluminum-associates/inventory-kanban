@@ -6,6 +6,7 @@ import { supabase } from "@lib/clients/supabase"
 
 export default function Home() {
   const [session, setSession] = useState(null)
+
   useEffect(() => {
     setSession(supabase.auth.session())
 
